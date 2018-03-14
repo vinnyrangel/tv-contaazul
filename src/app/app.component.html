@@ -1,0 +1,12 @@
+<h1>{{title}}</h1>
+<h2>
+  {{ loading ? 'Loading...' : message || error }}
+</h2>
+
+<h2>Comunicados</h2>
+<ul>
+  <li *ngFor="let comunicado of comunicados">
+    <img [src]="comunicado.imagem" alt="{{ comunicado.posicao }}" width="300" />
+  </li>
+</ul>
+
